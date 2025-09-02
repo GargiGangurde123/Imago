@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/main"
+    tools:context=".home">
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/brand_name"
+        android:textSize="45sp"
+        android:fontFamily="@font/abrilfatface_regular"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="582dp"
+        android:layout_marginTop="150dp"
+        android:orientation="vertical"
+        android:background="@drawable/layout_border">
+
+
+        <EditText
+            android:id="@+id/user_TextField"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:width="250dp"
+            android:padding="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:inputType="text"
+            android:hint="@string/username"
+            android:background="@drawable/border"
+            android:autofillHints="username"/>
+
+        <EditText
+            android:id="@+id/password_TextField"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:width="250dp"
+            android:padding="10dp"
+            android:layout_below="@+id/user_TextField"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:inputType="textPassword"
+            android:background="@drawable/border"
+            android:hint="@string/pass"
+            android:autofillHints="password"/>
+
+        <Button
+            android:id="@+id/login_Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:background="@drawable/border"
+            android:layout_marginTop="25dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/password_TextField" />
+
+        <TextView
+
+            android:id="@+id/questionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Don't have an account?"
+            android:layout_marginTop="25dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/login_Btn"
+            android:textColorHint="@color/white"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/register_Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/questionText"
+            style="?android:attr/borderlessButtonStyle"
+            android:textColor="@color/link" />
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+
+
+

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">imagointr</string>
+    <string name="brand_name">Imago</string>
+    <string name="username">username</string>
+    <string name="pass">password</string>
+    <string name="login">LOGIN</string>
+    <string name="register">REGISTER</string>
+    <string name="or">OR</string>
+    <string name="forgot_pass">Forgot password</string>
+    <string name="register_heading">Please enter authentic details to start with our App</string>
+    <string name="register_name">Full Name*</string>
+    <string name="enter_your_full_name">Enter your full name</string>
+    <string name="register_SubmitBtn">Register</string>
+    <string name="register_Confirm_Password">Confirm Password*</string>
+    <string name="register_Edit_Text_Confirm_Password">Confirm your password</string>
+</resources>
