@@ -1,10 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp"
+        android:background="@color/light_purple"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
     android:id="@+id/main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+
     tools:context=".upload">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <!-- App Header -->
+        <TextView
+            android:id="@+id/appTitle"
+            android:text="Imago"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/dark_blue"
+            android:layout_marginBottom="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="Add subtitles easily &amp; smartly"
+            android:textSize="14sp"
+            android:textColor="@color/gray_600"
+            android:layout_marginBottom="32dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Upload Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:id="@+id/uploadCard"
+            android:gravity="center"
+            android:layout_marginBottom="24dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:src="@drawable/dd"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                     />
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Tap to upload or drag a video"
+                    android:textColor="@color/gray_700"
+                    android:textSize="16sp"
+                    android:layout_marginTop="12dp"  />
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Supported formats: MP4, MOV, AVI, MKV"
+                    android:textColor="@color/gray_500"
+                    android:textSize="12sp"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Progress Bar (hidden until upload starts) -->
+        <ProgressBar
+            android:id="@+id/uploadProgress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:visibility="gone"
+            android:progressTint="@color/blue_500" />
+
+        <!-- Action Buttons -->
+        <Button
+            android:id="@+id/btnGenerateSubtitles"
+            android:text="Generate Subtitles"
+            android:backgroundTint="@color/blue_500"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="32dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+

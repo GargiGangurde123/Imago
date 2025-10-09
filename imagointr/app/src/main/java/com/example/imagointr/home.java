@@ -34,6 +34,16 @@ public class home extends AppCompatActivity {
                 finish();
             }
         });
+
+        loginbtn=findViewById(R.id.login_Btn);
+        loginbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent leg = new Intent(home.this,upload.class);
+                startActivity(leg);
+                finish();
+            }
+        });
     }
 
 

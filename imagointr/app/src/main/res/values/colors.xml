@@ -4,6 +4,15 @@
     <color name="white">#FFFFFFFF</color>
     <color name="purple">#B163FF</color>
     <color name="lp">#9370DB</color>
+    <color name="light_purple">#FFDAB1DA</color>
     <color name="link">#0000EE</color>
+    <color name="background_light">#FFE8F2FF</color>
+    <color name="dark_blue">#FF0000FF</color>
+    <color name="blue_500">#FF3B82F6</color>
+    <color name="gray_600">#FF4B5563</color>
+    <color name="gray_700">#FF374151</color>
+    <color name="gray_500">#FF6B7280</color>
+
+
 
 </resources>
